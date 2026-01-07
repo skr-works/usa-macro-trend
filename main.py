@@ -328,10 +328,17 @@ def generate_html(raw_df, trends, ratios, current_data, diagnosis):
                     <span style="font-size: 0.8rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 4px;">条件: SP500=DOWN and US_Rate=DOWN</span><br>
                     株、金利、エネルギー価格がすべて下落しています。需要が世界的に消失しており、投資家が現金（キャッシュ）へ逃避している不況モードです。
                 </div>
-                <div>
+                <div style="margin-bottom: 15px;">
                     <strong style="color: #0d47a1;">信認の揺らぎ (質への逃避)</strong><br>
                     <span style="font-size: 0.8rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 4px;">条件: USD=DOWN and Gold=UP</span><br>
                     基軸通貨であるドルが売られ、無国籍通貨である金が買われています。米国の財政や金融システムへの不信感、あるいは将来のインフレ懸念が高まっています。
+                </div>
+
+                <h5 style="margin: 25px 0 10px 0; border-left: 4px solid #757575; padding-left: 10px; color: #333;">⚪ その他</h5>
+                <div>
+                    <strong style="color: #616161;">トレンド交錯・過渡期</strong><br>
+                    <span style="font-size: 0.8rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 4px;">パターン合致なし</span><br>
+                    主要指数の方向性がバラバラで、明確なトレンドが出ていません。市場の迷い、あるいはトレンドの転換点（過渡期）にある可能性が高い状態です。
                 </div>
             </div>
         </details>
