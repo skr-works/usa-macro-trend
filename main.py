@@ -70,8 +70,8 @@ def get_market_data():
     if isinstance(raw_df.columns, pd.MultiIndex):
         raw_df.columns = raw_df.columns.droplevel(1)
     
-    # 欠損値補完
-    raw_df = raw_df.fillna(method='ffill')
+    # 欠損値補完 (修正箇所1)
+    raw_df = raw_df.ffill()
     raw_df = raw_df.dropna(how='all')
     
     return raw_df
@@ -194,7 +194,8 @@ def generate_html(raw_df, trends, ratios, current_data, diagnosis):
     for key in display_keys:
         col_key = TICKERS[key]
         if col_key in normalized_df:
-            series = normalized_df[col_key].fillna(method='ffill')
+            # 欠損値補完 (修正箇所2)
+            series = normalized_df[col_key].ffill()
             plot_data[LABELS[key]] = series.tolist()
 
     chart_labels = normalized_df.index.strftime('%Y/%m/%d').tolist()
