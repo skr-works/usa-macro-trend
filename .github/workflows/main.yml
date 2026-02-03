@@ -2,8 +2,8 @@ name: US Macro Trend Update
 
 on:
   schedule:
-    # 毎日 UTC 21:00 (EST 16:00 / JST 翌06:00) に実行
-    - cron: '0 21 * * *'
+    # 毎日 UTC 21:46 (JST 翌06:46) に実行
+    - cron: '46 21 * * *'
   workflow_dispatch:
 
 jobs:
