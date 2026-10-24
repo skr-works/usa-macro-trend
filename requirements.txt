@@ -2,3 +2,4 @@ pandas
 yfinance
 requests
 holidays
+certifi>=2026.10.19
